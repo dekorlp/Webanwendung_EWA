@@ -1,0 +1,146 @@
+/* Layout */
+body {color: black; background-color:Gainsboro ; font: 1em verdana;}
+
+header { 
+	color: white; 
+	background-color:Peru; 
+	text-align: center;
+	border-style: solid;
+	border-width: 2px;
+	border-color: grey;
+	border-radius: 25pt;
+	margin-bottom: 0.5%;}
+	
+h2 {text-align: center;}
+
+
+.pizzen {
+	float:left; 
+	width:17%; 
+	border-style: solid;
+	border-width: 2px;
+	border-color: grey;
+	border-radius: 25pt;
+	padding: 0.1%;
+	background-color:WhiteSmoke;
+	}
+	
+.pizzaItem{
+	display: flex; /* Aktiviert das Flex-Modell */
+	align-items: center; /* Zentriert den Child vertikal, relativ zum Parent */
+	justify-content:left; /* Zentriert den Child horizontal, relativ zum Parent */
+	padding-left: 5%;
+	padding-bottom: 5%;
+}
+
+.pizzaText{
+	margin-left: 5%;
+	 
+}
+
+.warenkorb {
+	float:right;
+	width:15%;
+	padding-left: 1%;
+	padding-bottom: 1%;
+	background-color:WhiteSmoke;
+ 
+	border-style: solid;
+	border-width: 2px;
+	border-color: grey;
+	border-radius: 25pt;
+ }
+ 
+.beschreibung {
+	display: inline;
+	float: left;
+	margin-left: 0.5%;
+	width: 63.2%;
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+	font-size: 15px; /* Dynamische Anpassung der Schriftgröße funktioniet nicht mit px, em, pt */
+	
+	border-style: solid;
+	border-width: 2px;
+	border-color: grey;
+	border-radius: 25pt;
+	background-color:WhiteSmoke;
+	}
+	
+.status{
+	
+	border-style: solid;
+	border-width: 2px;
+	border-color: grey;
+	border-radius: 25pt;
+	background-color:WhiteSmoke;
+	margin-bottom: 1%;
+	
+	padding-left: 5%;
+	padding-bottom: 1%;
+
+}
+
+
+.status h3
+{
+	text-align: center;
+}
+.status div
+{
+	margin-bottom: 1%;
+	display: flex; /* Aktiviert das Flex-Modell */
+	align-items: center; /* Zentriert den Child vertikal, relativ zum Parent */
+	justify-content:left; /* Zentriert den Child horizontal, relativ zum Parent */
+	text-align: center;
+	
+}
+
+.status div span
+{
+	width: 25%;	
+}
+
+.button
+{
+	background-color: grey; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 10pt;
+}
+
+.bestellstatus_input
+{
+	background-color: grey; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+	margin-left: 45%;
+}
+
+@media only screen and (max-width: 900px) {
+    /* For mobile phones: */
+    .warenkorb{
+		width: 40%;
+	}
+	
+	.pizzen{
+		width: 55%;
+	}
+	
+	.beschreibung {
+		width: 100%;
+	}
+}

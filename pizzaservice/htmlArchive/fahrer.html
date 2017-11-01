@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Fahrer</title>
+		
+		<link rel="stylesheet" href="style/main.css">
+		<script type="text/javascript" src="js/functions.js"/> </script>
+	</head>
+	<body>
+	<header><h1>Fahrer</h1></header>
+		<div>
+				<article class ="status" >
+					<h3>Köhler, Kettelersdivaße 4 13.50€
+					<br /> Margherita, Salami, Tonno</h3>
+						<div>
+							<span>fertig</span>
+							<span>unterwegs</span>
+							<span>geliefert</span>
+						</div>
+						<div id="Kunde0">
+							<span><input type="radio" name="bestellung0" onclick="selectNextOrder(0);" checked/> </span>
+							<span><input type="radio" name="bestellung0" onclick="selectNextOrder(0);"/> </span>
+							<span><input type="radio" name="bestellung0" onclick="selectNextOrder(0);" disabled/> </span>
+						</div>
+				</article>
+				<article class ="status">
+					<h3>Müller, Kasinosdiv. 5 10,00€
+					<br /> Salami, Prosciutto</h3>
+						<div>
+							<span>fertig</span>
+							<span>unterwegs</span>
+							<span>geliefert</span>
+						</div>
+						<div id="Kunde1">
+							<span><input type="radio" name="bestellung1" onclick="selectNextOrder(1);" disabled/> </span>
+							<span><input type="radio" name="bestellung2" onclick="selectNextOrder(1);" checked/> </span>
+							<span><input type="radio" name="bestellung2" onclick="selectNextOrder(1);" /> </span>
+						</div>
+				</article>
+			</div>
+	</body>
+</html>

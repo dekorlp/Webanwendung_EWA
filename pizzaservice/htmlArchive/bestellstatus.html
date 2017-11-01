@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Bestellstatus</title>
+		
+		<link rel="stylesheet" href="style/main.css">
+	</head>
+	<body>
+	<header><h1>Bestellstatus</h1></header>
+		<section class="status">
+			<h2>Lieferstand:</h2>
+				<div>
+					<span></span>
+					<span>bestellt</span>
+					<span>im Ofen</span>
+					<span>fertig</span>
+					<span>unterwegs</span>
+				</div>
+				<div>
+					<span>Margherita</span>
+					<span><input type="radio" onclick="document.forms['formid'].submit();"  name="margherita" disabled/> </span>
+					<span><input type="radio" name="margherita" onclick="document.forms['formid'].submit();" disabled/> </span>
+					<span><input type="radio" name="margherita" onclick="document.forms['formid'].submit();" disabled/> </span>
+					<span><input type="radio" name="margherita" onclick="document.forms['formid'].submit();" disabled/> </span>
+				</div>
+				<div>
+					<span>Tonno</span>
+					<span><input type="radio" name="tonno" onclick="document.forms['formid'].submit();" disabled/> </span>
+					<span><input type="radio" name="tonno" onclick="document.forms['formid'].submit();" disabled/> </span>
+					<span><input type="radio" name="tonno" onclick="document.forms['formid'].submit();" disabled/> </span>
+					<span><input type="radio" name="tonno" onclick="document.forms['formid'].submit();" disabled/> </span>
+				</div>
+				<div>
+					<span>Prosciutto</span>
+					<span><input type="radio" name="tonno" onclick="document.forms['formid'].submit();" disabled/> </span>
+					<span><input type="radio" name="tonno" onclick="document.forms['formid'].submit();" disabled/> </span>
+					<span><input type="radio" name="tonno" onclick="document.forms['formid'].submit();" disabled/> </span>
+					<span><input type="radio" name="tonno" onclick="document.forms['formid'].submit();" disabled/> </span>
+				</div>
+			<form action="bestellung.html">
+				<input type="submit" value="Neue bestellung" class="bestellstatus_input" /> 
+			</form>
+		</section>
+	</body>
+</html>

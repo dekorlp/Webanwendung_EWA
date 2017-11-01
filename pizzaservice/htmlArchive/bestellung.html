@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Bestellung</title>
+		
+		<link rel="stylesheet" href="style/main.css"/>
+		<script type="text/javascript" src="js/functions.js"/> </script>
+
+	</head>
+	<body>
+	<header><h1>Bestellung</h1></header>
+		<section class="warenkorb">
+			<h2>Warenkorb</h2>
+			
+			<form action="http://www.fbi.h-da.de/cgi-bin/Echo.pl" accept-charset="UTF-8" method="get">
+				
+				<section id="pizzaList">
+					<h3>zu löschende Pizza</h3>
+					<div id="pizza0">
+						<span><input type="image" onClick="deletePizza(0)" title="alle löschen" alt="löschen" src="images/Actions-edit-delete-icon-16px.png" /></span>
+						<span>Margherita</span>
+					</div>
+					<div id="pizza1">
+						<span>
+							<input type="image" onClick="deletePizza(1)" title="alle löschen" alt="löschen" name="pizza1" src="images/Actions-edit-delete-icon-16px.png" />
+						</span>
+						<span>Tonno</span>
+					</div>
+					<div id="pizza2">
+						<span>
+							<input type="image" onClick="deletePizza(2)" title="alle löschen" alt="löschen" name="pizza2" src="images/Actions-edit-delete-icon-16px.png" />
+						</span>
+						<span>Prosciutto</span>
+					</div>
+				</section>
+				
+				
+				<p>Preis: <span id="gesamtPreis">14,50</span> Euro</p> 
+				<label>Adresse: <br /><input name="address" required type="text"/></label> 
+				<br />
+				<input class ="button" type="submit" name="order" value="Bestellen"/>
+				<input class ="button" onClick="deleteAllPizzas()" type="button" name="deleteAll" value="Alle löschen"/>
+			</form>
+			
+	
+		
+		</section>
+		<section class="pizzen" id = "pizzen">
+			<h2>Pizzen:</h2>
+			<div class="pizzaItem" id="Marghaerita"> <!-- Pizzen werden mit Divisions dargestellt, weil Articles eine Überschrift erfordern -->
+				<input type="image" onclick="appendPizzaToCart(0)"  alt="margherita"   name="Margherita" src="images/Pizza-icon.png" />
+				<span class="pizzaText">Margherita</span>
+				<span class="pizzaText">4,00 €</span>
+			</div>
+			<div class="pizzaItem">
+				<input type="image" onclick="appendPizzaToCart(1)" alt="salami" name="Salami" src="images/Pizza-icon.png" />
+				<span class="pizzaText">Salami</span>
+				<span class="pizzaText">4,50 €</span>
+			</div>
+			<div class="pizzaItem">
+				<input type="image" onclick="appendPizzaToCart(2)" alt="prosciutto" name="Prosciutto" src="images/Pizza-icon.png" />
+				<span class="pizzaText">Prosciutto</span>
+				<span class="pizzaText">5,50 €</span>
+			</div>
+			<div class="pizzaItem">
+				<input type="image" onclick="appendPizzaToCart(3)" alt="tonno" name="Tonno" src="images/Pizza-icon.png" />
+				<span class="pizzaText">Tonno</span>
+				<span class="pizzaText">5,00 €</span>
+			</div>
+
+
+		</section>
+		
+			<section class="beschreibung">
+			<h2>Willkommen</h2>
+			Zur Zubereitung wird zuerst ein einfacher Hefeteig aus Mehl, Wasser, wenig Hefe, Salz und eventuell etwas Olivenöl hergestellt, gründlich durchgeknetet und nach einer Gehzeit von mindestens einer Stunde bei Zimmertemperatur (bzw. über Nacht im oberen Fach des Kühlschranks) ausgerollt oder mit den bemehlten Händen dünn ausgezogen. Geübte Pizzabäcker ziehen den Teig über den Handrücken und weiten ihn durch Kreisenlassen in der Luft.
+Pizza-Ofen mit Gasbefeuerung
+
+Dann wird der Teig mit den Zutaten je nach Rezept nicht zu üppig belegt, üblicherweise zuerst mit Tomatenscheiben oder häufiger mit passierten Dosentomaten oder Salsa pizzaiola (einer vorher gekochten, sämigen Tomatensauce, die mit Oregano, Basilikum, Knoblauch und anderem kräftig gewürzt ist). Es folgen der Käse (z. B. Mozzarella, Parmesan oder Pecorino) und die übrigen Zutaten, zum Abschluss etwas Olivenöl.
+
+Schließlich wird die Pizza bei einer möglichst hohen Temperatur von 400 bis 500 °C für wenige Minuten kurz gebacken. Dies geschieht in einer möglichst niedrigen Kammer. Ein Stapeln in Einschüben oder separat schaltbare Unter- und Oberhitze ist daher nicht üblich. Der traditionelle Kuppelofen ist gemauert und die Hitze wird über ein Feuer direkt im Backraum erzeugt. Moderne Pizzaöfen werden mit Gas oder Strom beheizt.
+
+In Haushaltsbacköfen sind meist nur Temperaturen bis 250 °C möglich, wodurch sich die Backzeit verlängert und kein optimales Ergebnis erzielt wird. Durch die Verwendung eines vorgeheizten, meist aus Schamotte bestehenden Pizzasteins anstelle eines Backblechs lassen sich bessere Resultate erzielen, weil dieser die Hitze gleichmäßiger hält und Schwitzwasserbildung verhindert. Ein ähnlicher Effekt lässt sich jedoch auch erreichen, indem man die auf der Unterseite ausreichend bemehlte (Festkleben verhindern!) Pizza direkt auf ein bereits im Ofen vorgeheiztes Backblech gibt und im unteren Ofenbereich/auf der untersten Schiene bei (Ober- und) Unterhitze bäckt. Hierbei sind ggf. in der jeweiligen Gebrauchsanweisung angegebene Temperatureinschränkungen von Blechen (manche nur bis 220 °C verwendbar und nicht für Vorheizen ohne Backgut geeignet) und Backpapier (meist nur bis 220 °C) zu beachten.
+		</section>
+	</body>
+</html>
